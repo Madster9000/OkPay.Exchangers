@@ -1,0 +1,40 @@
+﻿<div class="container-fluid">
+    <div class="row" style="height: 100%;">
+        <div class="col-md-4" >
+            <table class="table" style="text-align: center">
+                <tr>
+                    <th style="text-align: center">Отдадите</th>
+                    <th style="text-align: center">Получите</th>
+                </tr>
+                <tr data-ng-repeat="currency in ExchangersViewModel.Currencies">
+                    <td style="cursor: pointer"
+                        data-ng-bind="currency.Name"
+                        data-ng-class="{ 'info': currency.Id === ExchangersViewModel.FirstCurrency.Id }"
+                        data-ng-click="ExchangersEvents.OnFirstCurrencyClicked(currency)"></td>
+
+                    <td style="cursor: pointer"
+                        data-ng-bind="currency.Name"
+                        data-ng-class="{ 'info': currency.Id === ExchangersViewModel.SecondCurrency.Id }"
+                        data-ng-click="ExchangersEvents.OnSecondCurrencyClicked(currency)"></td>
+                </tr>
+                
+            </table>
+            
+        </div>
+        <div class="col-md-8">
+            <table class="table" style="text-align: center">
+                <tr>
+                    <th style="text-align: center">Обменник</th>
+                    <th style="text-align: center">Отдаёте {{ExchangersViewModel.FirstCurrency.Name}}</th>
+                    <th style="text-align: center">Получаете {{ExchangersViewModel.SecondCurrency.Name}}</th>
+                </tr>
+                <tr data-ng-repeat="exchanger in ExchangersViewModel.Exchangers">
+                    <td data-ng-bind="exchanger.ExchangerName"></td>
+                    <td>100</td>
+                    <td data-ng-bind="exchanger.Course * 100"></td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+</div>

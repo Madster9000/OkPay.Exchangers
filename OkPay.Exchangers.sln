@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OkPay.Exchangers.Ui", "OkPay.Exchangers.Ui\OkPay.Exchangers.Ui.csproj", "{0C3BB7DC-915D-4EAD-ACBD-A915681B330B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OkPay.Exchangers.Model", "OkPay.Exchangers.Model\OkPay.Exchangers.Model.csproj", "{317FD6BD-A4DF-4498-A66B-FEF852C2193C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OkPay.Exchangers.DbContext", "OkPay.Exchangers.DbContext\OkPay.Exchangers.DbContext.csproj", "{5664AFAC-1744-416A-AB06-45FC5D98F17F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OkPay.Exchangers.Cqrs", "OkPay.Exchangers.Cqrs\OkPay.Exchangers.Cqrs.csproj", "{351D8873-B2CF-4D52-9602-F95E5AD8B06A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OkPay.Exchangers.Services", "OkPay.Exchangers.Services\OkPay.Exchangers.Services.csproj", "{44ED27DF-C84F-4EA9-BC91-8A1054F27BF2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{2D7EC7F9-801F-4705-8926-D1142744FDC0}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C3BB7DC-915D-4EAD-ACBD-A915681B330B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C3BB7DC-915D-4EAD-ACBD-A915681B330B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C3BB7DC-915D-4EAD-ACBD-A915681B330B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C3BB7DC-915D-4EAD-ACBD-A915681B330B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{317FD6BD-A4DF-4498-A66B-FEF852C2193C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{317FD6BD-A4DF-4498-A66B-FEF852C2193C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{317FD6BD-A4DF-4498-A66B-FEF852C2193C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{317FD6BD-A4DF-4498-A66B-FEF852C2193C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5664AFAC-1744-416A-AB06-45FC5D98F17F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5664AFAC-1744-416A-AB06-45FC5D98F17F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5664AFAC-1744-416A-AB06-45FC5D98F17F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5664AFAC-1744-416A-AB06-45FC5D98F17F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{351D8873-B2CF-4D52-9602-F95E5AD8B06A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{351D8873-B2CF-4D52-9602-F95E5AD8B06A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{351D8873-B2CF-4D52-9602-F95E5AD8B06A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{351D8873-B2CF-4D52-9602-F95E5AD8B06A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44ED27DF-C84F-4EA9-BC91-8A1054F27BF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44ED27DF-C84F-4EA9-BC91-8A1054F27BF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44ED27DF-C84F-4EA9-BC91-8A1054F27BF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44ED27DF-C84F-4EA9-BC91-8A1054F27BF2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,69 @@
+﻿<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <form name="registerForm" novalidate="">
+                <div class="form-group" data-ng-class="{ 'has-error': registerForm.login.$invalid }" show-errors>
+
+                    <label for="login">Логин: </label>
+                    <input type="email"
+                           name="login"
+                           id="login"
+                           placeholder="Логин"
+                           class="form-control"
+                           data-ng-model="RegisterViewModel.Login"
+                           required="" />
+                    <p class="help-block" data-ng-show="registerForm.login.$error.required">Введите свой e-mail</p>
+                    <p class="help-block" data-ng-show="registerForm.login.$error.email">Введённый логин некорректен. Введите правильный e-mail</p>
+
+                </div>
+                <div class="form-group" data-ng-class="{ 'has-error': registerForm.password.$invalid }" show-errors>
+
+                    <label for="password">Пароль: </label>
+                    <input type="password"
+                           name="password"
+                           id="password"
+                           placeholder="Пароль"
+                           class="form-control"
+                           data-ng-model="RegisterViewModel.Password"
+                           required="" />
+                    <p class="help-block" data-ng-show="registerForm.password.$error.required">Введите пароль</p>
+
+                </div>
+                <div class="form-group" data-ng-class="{ 'has-error': registerForm.passwordConfirmation.$invalid }" show-errors>
+
+                    <label for="passwordConfirmation">Подтверждение пароля: </label>
+                    <input type="password"
+                           name="passwordConfirmation"
+                           id="passwordConfirmation"
+                           placeholder="Подтверждение пароля"
+                           class="form-control"
+                           data-ng-model="RegisterViewModel.PasswordConfirmation"
+                           data-op-equals="RegisterViewModel.Password"
+                           required="" />
+                    <p class="help-block" data-ng-show="registerForm.passwordConfirmation.$error.required">Введите подтверждение пароля</p>
+                    <p class="help-block" data-ng-show="registerForm.passwordConfirmation.$error.equals">Пароли не совпадают</p>
+
+                </div>
+                <!--ng-model-options="{ updateOn: 'blur' }"-->
+            </form>
+        </div>
+    </div>
+    <div class="row" >
+        <div class="col-md-4" style="text-align: left;">
+            <button type="button"
+                    class="btn btn-primary"
+                    data-ng-class="{ 'disabled': registerForm.$invalid }"
+                    data-ng-click="RegisterEvents.OnRegisterClicked()">
+                Зарегистрироваться
+            </button>
+        </div>
+        <div class="col-md-4"></div>
+        <div class="col-md-4" style="text-align: right;">
+            <button type="button"
+                    class="btn btn-link"
+                    data-ng-click="RegisterEvents.OnUserRegisteredClicked()">
+                Уже зарегистрированы?
+            </button>
+        </div>
+    </div>
+</div>

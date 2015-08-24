@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" data-ng-app="exchangersApplication">
+<head>
+    <title>Мониторинг обменников</title>
+
+    <link href="Content/bootstrap.css" rel="stylesheet"/>
+
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-route.js"></script>
+
+    <script src="FrontendBuild/services.js"></script>
+    <script src="FrontendBuild/direcives.js"></script>
+    <script src="FrontendBuild/controllers.js"></script>
+
+    <script src="FrontendBuild/modules.js"></script>
+    <script src="FrontendBuild/application.js"></script>
+
+    <style>
+        html, body
+        {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="container" style="height: 100%">
+    <div class="row" style="height: 10%;">
+        <div class="col-md-3"></div>
+        <div class="col-md-3"></div>
+        <div class="col-md-3"></div>
+        <div class="col-md-3" style="text-align: center">
+            <div data-op-user-message=""></div>
+        </div>
+    </div>
+    <div class="row" style="height: 80%;">
+        <div class="col-md-2"></div>
+        <div class="col-md-8" style="height: 100%;">
+            <div data-ng-view=""></div>
+        </div>
+        <div class="col-md-2" style="height: 100%"></div>
+    </div>
+    <div class="row" style="height: 10%;"></div>
+</div>
+</body>
+</html>

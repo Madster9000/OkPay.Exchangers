@@ -1,0 +1,5 @@
+﻿<div>
+    <span class="label label-info"
+          data-ng-class="{ 'label-danger': !(UsersService.CurrentUser.IsUserRegistered || UsersService.CurrentUser.IsUserLogedIn)}"
+          data-ng-bind="UsersService.CurrentUser.Description"></span>
+</div>
